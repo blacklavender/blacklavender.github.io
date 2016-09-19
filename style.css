@@ -1,13 +1,20 @@
 body {
     background-color: lightblue;
-    text-align:center;
 }
 
 h1 {
     color: navy;
     margin-left: 20px;
+    letter-spacing: 3px;
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+   font-family: arial,verdana,sans-serif;
+   font-size: 20px;
+   background: #ffffff;
+   color: black;
 }
