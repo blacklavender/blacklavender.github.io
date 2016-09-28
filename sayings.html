@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+    
+createCookie('ppkcookie','testcookie',7);
+
+var x = readCookie('ppkcookie')
+if (x) {
+    [do something with x]
+}
+}
+
+</script>
+<head>
+     <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body onload="createCookie()">
+
+<h1>Sayings</h1>
+<h2>Quotes</h2>
+    <ul>
+      <li>"It's not as though I have the absence of fear, I feel it quite strongly. But there are just times when something is important enough, that you do it in spite of fear" - Elon Musk</li><br>
+      <li>"Do not pray for an easy life. Pray for the strength to endure a difficult one." - Bruce Lee</li><br>
+      <li>"Handle Rejection. Don't Handle Regret" - Kong</li>
+    </ul>
+<h2>Pickup Lines</h2>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <p></p>
+</body>
+</html>

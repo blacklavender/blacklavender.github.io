@@ -1,0 +1,27 @@
+body {
+    color: black;
+    background-color: black;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    color: blanchedalmond;
+    float: left;
+    width: 100%;
+    background-color: #dff;
+    color: #5a514c;
+    text-align: center;}
+
+}
+p{
+        color: white;
+}
+li{
+        color: aliceblue;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      
+}
+form{align-content: center}
